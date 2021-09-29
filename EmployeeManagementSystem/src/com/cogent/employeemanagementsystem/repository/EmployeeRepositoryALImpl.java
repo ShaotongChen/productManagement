@@ -20,7 +20,7 @@ public class EmployeeRepositoryALImpl implements EmployeeRepository {
 		}
 		return employeeRepository;
 	}
-	private ArrayList<Employee> employees = new ArrayList<>();
+	private List<Employee> employees = new ArrayList<>();
 	//10 employees
 	//when we will add 11th one then it will increase the size automatically
 	// self growable
@@ -64,9 +64,9 @@ public class EmployeeRepositoryALImpl implements EmployeeRepository {
 	}
 
 	@Override
-	public Employee[] getEmployees() {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Employee> getEmployees() {
+		//Employee[] employee= new Employee[employees.size()];
+		return employees;
 	}
 
 	@Override
