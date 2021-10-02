@@ -1,6 +1,7 @@
 package com.cogent.employeemanagementsystem.repository;
 
 import java.io.IOException;
+import java.util.List;
 
 import com.cogent.employeemanagementsystem.exception.IdNotFoundException;
 import com.cogent.employeemanagementsystem.model.Employee;
@@ -98,6 +99,12 @@ public Employee getEmployeeByName(String name) {
 		}
 	}
 	return null;
+}
+
+@Override
+public boolean isEmployeeExist(String Id) {
+	// TODO Auto-generated method stub
+	return false;
 }
 	}
 

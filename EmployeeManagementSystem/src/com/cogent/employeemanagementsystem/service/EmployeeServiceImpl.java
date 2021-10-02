@@ -49,4 +49,9 @@ public Employee getEmployeeByID(String id) throws IdNotFoundException, IOExcepti
 public String upddateEmployee(String id, Employee employee) throws IdNotFoundException, IOException {
 	return employeeRepository.upddateEmployee(id, employee);
 }
+@Override
+public boolean isEmployeeExist(String Id) {
+	// TODO Auto-generated method stub
+	return employeeRepository.isEmployeeExist(Id);
+}
 }
